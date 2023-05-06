@@ -4,7 +4,7 @@ import sys
 import os
 import re
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv[1:]) != 2:
         print("Usage: ./markdown2html.py README.md README.html",
               file=sys.stderr)
@@ -25,7 +25,7 @@ if __name__ == '__main__':
             if len(heading) > 1:
                 h_level = len(line[:line.find(heading[1]) -1])
                 html_content.append(
-                    f'<h{h_level}>{heading[1]]</h{h_level}>\n'
+                    f'<h{h_level}>{heading[1]}</h{h_level}>\n'
                     )
             else:
                 html_content.append(line)
