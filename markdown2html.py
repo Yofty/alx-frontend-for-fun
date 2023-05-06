@@ -13,11 +13,11 @@ if __name__ == "__main__":
     input_file = sys.argv[1]
     output_file = sys.argv[2]
 
-    if not (os.path.exists(inpute_file) and  os.path.isfile(input_file)):
+    if not (os.path.exists(input_file) and  os.path.isfile(input_file)):
         print(f'Missing {input_file}', file=sys.stderr)
         sys.exit(1)
 
-    with open(input_file, encoding='uft-8') as file_1:
+    with open(input_file, encoding='utf-8') as file_1:
         html_content = []
         md_content =[line[:-1] for line in file_1.readlines()]
         for line in md_content:
