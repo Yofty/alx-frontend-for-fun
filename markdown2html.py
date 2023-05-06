@@ -23,7 +23,7 @@ if __name__ == "__main__":
         for line in md_content:
             heading = re.split(r'#{1,6}', line)
             if len(heading) > 1:
-                h_level = len(line[:line.find(heading[1]) -1])
+                h_level = len(line[:line.find(heading[1])])
                 html_content.append(
                     f'<h{h_level}>{heading[1]}</h{h_level}>\n'
                     )
