@@ -22,11 +22,16 @@ if __name__ == "__main__":
         md_content =[line[:-1] for line in file_1.readlines()]
         for line in md_content:
             heading = re.split(r'#{1,6}', line)
+            lists = re.split(r'-', line)
             if len(heading) > 1:
                 h_level = len(line[:line.find(heading[1])])
                 html_content.append(
                     f'<h{h_level}>{heading[1]}</h{h_level}>\n'
                     )
+            elif len(lists) > 1:
+                html_content.append(
+                    f'<ul>\n<li>lists1</li>\n</ul>\n'
+                    ) 
             else:
                 html_content.append(line)
 
