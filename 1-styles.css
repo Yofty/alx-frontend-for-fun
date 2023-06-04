@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 
@@ -27,4 +27,5 @@ a::before {
 
 a:hover::before {
   width: 9.5ch;
+  top: 20px;
 }

@@ -1,7 +1,7 @@
 :root {
   --is-red: #D73953;
   --btn-transition: 0.1s ease-out;
-  --circle-size: 2rem;
+  --circle-size: 4rem;
 }
 
 .menu {
@@ -24,9 +24,9 @@
 }
 
 .menu-line {
-  margin: 1px auto;
-  width: 10px;
-  height: 1px;
+  margin: 2px auto;
+  width: 30px;
+  height: 2px;
   background: white;
 }
 
@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1rem;
+  font-size: 3rem;
   border-radius: 50%;
   background-color: var(--is-red);
   height: var(--circle-size);
@@ -44,7 +44,7 @@
 }
 
 .menu-open-button:hover {
-  height: 2.1rem;
+  height: 4.1rem;
   width: 21.rem;
   transition: 01s ease-out;
 }
@@ -63,9 +63,9 @@
 }
 
 .menu-open:checked ~ .menu-open-button, .menu-open:checked ~ .menu-item {
-  height: 1.5rem;
-  width: 1.5rem;
-  font-size: 7px;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 19px;
 }
 
 .menu-open:checked ~ .menu-open-button > .menu-line-3 {
